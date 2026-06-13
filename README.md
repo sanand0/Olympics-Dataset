@@ -1,6 +1,6 @@
 # Olympics-Dataset
 
-This repo contains a comprehensive dataset on summer & winter Olympic athletes & their results between 1896-2022 (will be updated with 2024 results after the upcoming Paris Games)
+This repo contains a comprehensive dataset on summer & winter Olympic results between 1896-2026. Athlete bios currently cover through 2022.
 
 ![Olympic Flame](./assets/olympic_flame.jpeg)
 
@@ -10,6 +10,7 @@ This data comes from [olympedia.org](https://www.olympedia.org/) and was web scr
 
 - [athletes/bios.csv](./athletes/bios.csv) contains the raw biographical information on each athlete<br/>
 - [results/results.csv](./results/results.csv) contains a row-by-row breakdown of each event athletes competed in and their results in that event.
+- [update_results.py](./update_results.py) updates the result files from Olympedia's edition result pages. Downloads are cached under `.cache/` so interrupted updates can resume.
 
 Note, in the process of scraping this dataset, temporary CSV files were created to checkpoint scraping progress. For simplicity these checkpointed files have since been removed from the repository.
 
